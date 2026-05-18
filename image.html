@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FRUIT STICKS | Fresh & Delicious</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffdf8;
+    color:#222;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:18px 8%;
+    background:#0d0d0d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    color:#ffcc00;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("D:\homes.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:75px;
+    color:#ffcc00;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ffcc00;
+    color:#111;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:white;
+}
+
+/* SECTION */
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:60px;
+    color:#111;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:25px;
+}
+
+.about-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:2;
+    color:#555;
+    font-size:18px;
+}
+
+/* MENU */
+
+.menu-category{
+    margin-bottom:90px;
+}
+
+.menu-category h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+    color:#ff6600;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.menu-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.menu-content{
+    padding:25px;
+}
+
+.menu-content h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.menu-content p{
+    color:#555;
+    line-height:2;
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:#111;
+    color:white;
+    padding:50px;
+    border-radius:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+}
+
+.contact-item h3{
+    color:#ffcc00;
+    margin-bottom:15px;
+}
+
+/* MAP */
+
+.map{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:25px;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">FRUIT STICKS</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Fresh • Healthy • Delicious</h1>
+
+        <p>Best Juice, Snacks & Ice Cream Spot in Coimbatore</p>
+
+        <a href="tel:9361087945" class="hero-btn">📞 Order Now</a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h1 class="section-title">About FRUIT STICKS</h1>
+
+    <div class="about">
+
+        <img src="D:\about.jpg">
+
+        <div class="about-text">
+
+            <h2>Welcome to FRUIT STICKS</h2>
+
+            <p>
+              FRUIT STICKS is your favorite destination for fresh juices, tasty snacks,
+                milkshakes, sandwiches, Maggi specials, ice creams and refreshing drinks.
+            </p>
+
+            <p>
+                We serve delicious and hygienic food prepared with quality ingredients.
+                Visit us with your friends and family and enjoy amazing flavors every day.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu">
+
+    <h1 class="section-title">Our Delicious Menu</h1>
+
+    <!-- DRINKS -->
+
+    <div class="menu-category">
+
+        <h2>🍹 Drinks & Refreshers</h2>
+
+        <div class="menu-grid">
+
+            <!-- FLAVORED MILK -->
+
+            <div class="menu-card">
+                <img src="D:\kesar-badam-milk-shake-almond-600nw-2181583355.webp">
+
+                <div class="menu-content">
+                    <h3>Flavored Milk</h3>
+
+                    <p>
+                        Rosemilk – ₹40<br>
+                        Hot Badam Milk – ₹40<br>
+                        Cold Badam Milk – ₹40<br>
+                        Masala Buttermilk – ₹30
+                    </p>
+                </div>
+            </div>
+
+            <!-- GOLI SODA -->
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="menu-content">
+                    <h3>Goli Soda</h3>
+
+                    <p>
+                        Paneer Soda – ₹30<br>
+                        Ginger Soda – ₹30<br>
+                        Pineapple Soda – ₹30<br>
+                        Blueberry Soda – ₹30<br>
+                        Nannari Soda – ₹30<br>
+                        Lemon Soda – ₹30<br>
+                        Orange Soda – ₹30
+                    </p>
+                </div>
+            </div>
+
+            <!-- NATURAL REFRESHERS -->
+
+            <div class="menu-card">
+                <img src="C:\Users\ELCOT\Downloads\coco.png">
+                <div class="menu-content">
+                    <h3>Natural Refreshers</h3>
+
+                    <p>
+                        Tender Coconut – ₹55<br>
+                        Nannari Sarbath – ₹65
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SAVORY -->
+
+    <div class="menu-category">
+
+        <h2>🍲 Savory Bites</h2>
+
+        <div class="menu-grid">
+
+            <!-- SOUPS -->
+
+            <div class="menu-card">
+                <img src="D:\13338-quick-and-easy-vegetable-soup-DDMFS-4x3-402702f59e7a41519515cecccaba1b80.jpg">
+
+                <div class="menu-content">
+                    <h3>Healthy Soups</h3>
+
+                    <p>
+                        Vegetable Soup – ₹30<br>
+                        Mushroom Soup – ₹35<br>
+                        Horse Gram Soup – ₹35<br>
+                        Sweetcorn Soup – ₹35<br>
+                        Plantain Stem Soup – ₹35
+                    </p>
+                </div>
+            </div>
+
+            <!-- SUNDAL -->
+
+            <div class="menu-card">
+                <img src="D:\sundal.jpg">
+
+                <div class="menu-content">
+                    <h3>Sundal Specials</h3>
+
+                    <p>
+                        Mixed Pulses Sundal – ₹35<br>
+                        Sweet Corn – ₹35<br>
+                        Sweetcorn Peri Peri – ₹35
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SANDWICH -->
+
+    <div class="menu-category">
+
+        <h2>🥪 Sandwiches & Quick Eats</h2>
+
+        <div class="menu-grid">
+
+            <!-- SANDWICH -->
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="menu-content">
+                    <h3>Sandwiches</h3>
+
+                    <p>
+                        Veg Sandwich – ₹70<br>
+                        Veg Cheese Sandwich – ₹85<br>
+                        Egg Sandwich – ₹75<br>
+                        Paneer Sandwich – ₹80<br>
+                        Chicken Nugget Sandwich – ₹100<br>
+                        Chocolate Banana Sandwich – ₹90
+                    </p>
+                </div>
+            </div>
+
+            <!-- BREAD OMELET -->
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="menu-content">
+                    <h3>Bread & Egg Items</h3>
+
+                    <p>
+                        Bread Toast – ₹40<br>
+                        Bread Omelette – ₹65<br>
+                        Egg Omelette – ₹15<br>
+                        Boiled Egg – ₹30
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAGGI -->
+
+    <div class="menu-category">
+
+        <h2>🍜 Maggi Specials</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=1200&auto=format&fit=crop">
+
+                <div class="menu-content">
+                    <h3>Maggi Varieties</h3>
+
+                    <p>
+                        Classic Maggi – ₹70<br>
+                        Cheese Maggi – ₹80<br>
+                        Corn/Egg Maggi – ₹80<br>
+                        Peri Peri Maggi – ₹90<br>
+                        Paneer Maggi – ₹110<br>
+                        Chicken Nuggets Maggi – ₹120
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SPECIALS -->
+
+    <div class="menu-category">
+
+        <h2>🍧 Signature Specials</h2>
+
+        <div class="menu-grid">
+
+            <!-- JIGARTHANDA -->
+
+            <div class="menu-card">
+                <img src="D:\DSC05514-min-scaled.jpg">
+
+                <div class="menu-content">
+                    <h3>Jigarthanda</h3>
+
+                    <p>
+                        90 ml – ₹35<br>
+                        120 ml – ₹55<br>
+                        210 ml – ₹75
+                    </p>
+                </div>
+            </div>
+
+            <!-- FRUIT STICKS -->
+
+            <div class="menu-card">
+                <img src="D:\624727414_122113109205199406_1471549646055269206_n.jpg">
+
+                <div class="menu-content">
+                    <h3>Fruitsticks Signature</h3>
+
+                    <p>
+                        Milk, Peanut, Badam, Oreo, Strawberry, Pineapple,
+                        Chocolate, Kiwi, Dates, Biscoff, Paan,
+                        Jackfruit, White Guava & many more exciting flavors.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ICE CREAM -->
+
+    <div class="menu-category">
+
+        <h2>🍦 Ice Cream Delights</h2>
+
+        <div class="menu-grid">
+
+            <!-- MINI POPS -->
+
+            <div class="menu-card">
+                <img src="D:\large_e8a40f33-12cf-41a0-8006-61a5a5436c0d.jpg">
+
+                <div class="menu-content">
+                    <h3>Mini Pops</h3>
+
+                    <p>
+                        Mylo<br>
+                        KitKat<br>
+                        Lotus Biscoff
+                    </p>
+                </div>
+            </div>
+
+            <!-- TUBS -->
+
+            <div class="menu-card">
+                <img src="D:\90s-kids.webp">
+
+                <div class="menu-content">
+                    <h3>150 ml Tubes</h3>
+
+                    <p>
+                        Chocolate<br>
+                        Oreo<br>
+                        Jackfruit<br>
+                        Strawberry
+                    </p>
+                </div>
+            </div>
+
+            <!-- KULFI -->
+
+            <div class="menu-card">
+                <img src="D:\gulfi.webp">
+
+                <div class="menu-content">
+                    <h3>Kulfi & Family Packs</h3>
+
+                    <p>
+                        Delicious Kulfi varieties and Family Pack Ice Creams available.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h1 class="section-title">Contact Us</h1>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+
+            <h3>📍 Address</h3>
+
+            <p>
+                Thiruvalluvar St,<br>
+                Opposite Aagaram Hotel,<br>
+                Pallakattu Thottam,<br>
+                Coimbatore, Tamil Nadu - 641029
+            </p>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3>📞 Phone</h3>
+
+            <p>9361087945</p>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3>🕒 Opening Hours</h3>
+
+            <p>
+                Sunday - Saturday<br>
+                11:00 AM – 9:30 PM
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAP -->
+
+<section>
+
+    <h1 class="section-title">Find Us</h1>
+
+    <iframe class="map"
+    src="https://www.google.com/maps?q=3W6X+55+Coimbatore,+Tamil+Nadu&output=embed">
+    </iframe>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>FRUIT STICKS</h2>
+
+    <br>
+
+    <p>Freshness in Every Sip 🍹</p>
+
+    <br>
+
+    <a href="https://maps.app.goo.gl/KKm2UNntYQ2QDW8w6"
+    target="_blank"
+    style="color:#ffcc00;text-decoration:none;font-weight:600;">
+    View on Google Maps
+    </a>
+
+</footer>
+
+</body>
+</html>
